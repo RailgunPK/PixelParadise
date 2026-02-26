@@ -1,3 +1,34 @@
 body {
   background-image: url('images/sandBG.png');
 }
+
+.pond-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+/* Background pond image */
+.pond-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Fish game overlay */
+.pond-fish {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  background: transparent;
+
+  /* Match the circular pond shape */
+  border-radius: 50%;
+
+  pointer-events: auto;
+}
